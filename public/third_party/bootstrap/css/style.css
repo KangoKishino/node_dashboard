@@ -1,0 +1,39 @@
+h6 {
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+  }
+
+.container {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: left;
+    color: #2c3e50;
+    width: 800px;
+    margin: 60px auto;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+}
+
+.group {
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 30px;
+    position: relative;
+}
+
+.width {
+    width: 200px;
+}
+
+.error {
+    color: red;
+}
