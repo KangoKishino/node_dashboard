@@ -4,6 +4,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const userController = require('./controllers/userController');
+const validateController = require('./controllers/validateController');
 
 mongoose.Promise = global.Promise;
 
@@ -27,6 +28,6 @@ app.use('/public', express.static(__dirname + '/public'));
 
 app.get('/', userController.getSignUpPage);
 app.get('/signin', userController.getSignInPage);
-app.post('/dashboard', userController.validateUser, userController.saveUser);
+app.post('/dashboard', validateController.validateUser, userController.saveUser);
 
 app.listen(3000);
