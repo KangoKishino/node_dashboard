@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="/public/third_party/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/public/third_party/bootstrap/css/style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand">Laravel</a>
+            <div class="form-inline my-2 my-lg-0">
+                <a class="nav-link" href="/signin">Login</a>
+                <a class="nav-link" href="/">Register</a>
+            </div>
+        </nav>
+        <div class="container">
+            <h6>Register</h6>
+            <div class="group">
+                <form class="signup-form" action="/dashboard" method="post">
+                    <table>
+                        <tbody id="list">
+                            <tr>
+                                <td class="width">Name</td>
+                                <td>
+                                    <input type="text" name="name" value="<%= input.name %>">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>E-Mail Address</td>
+                                <td>
+                                    <input type="email" name="email" value="<%= input.email %>">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Password</td>
+                                <td>
+                                    <input type="password" name="password" value="<%= input.password %>">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Confirm Password</td>
+                                <td>
+                                    <input type="password" name="confirm" value="<%= input.confirm %>">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="submit" name="submit" class="btn btn-primary" value="Register">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="error"><%= error %></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+   </body>
+</html>
